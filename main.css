@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root {
+    /*---------------------LAYOUT-----------------------*/
+    --mobile: 375px;
+    --desktop: 1440px;
+    /*---------------------PRIMARY COLORS-----------------------*/
+    --limegreen: hsl(163, 72%, 41%);
+    --brightred: hsl(356, 69%, 56%);
+    --fb: hsl(208, 92%, 53%);
+    --tw: hsl(203, 89%, 53%);
+    --ig: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --yt: hsl(348, 97%, 39%);
+    /*---------THEMES-----------*/
+    --darkthemetoogle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --lightthemetoogle: hsl(230, 22%, 74%);
+    /*---------------------NEUTRAL COLORS-----------------------*/
+    /*---------DARK THEME-----------*/
+    --dt_bg: hsl(230, 17%, 14%);
+    --dt_topbg: hsl(232, 19%, 15%);
+    --dt_card: hsl(228, 28%, 20%);
+    --dt_blue: hsl(228, 34%, 66%);
+    --dt_white: hsl(0, 0%, 100%);
+    /*---------LIGHT THEME-----------*/
+    --lt_bg: hsl(0, 0%, 100%);
+    --lt_topbg: hsl(225, 100%, 98%);
+    --lt_card: hsl(227, 47%, 96%);
+    --lt_blue: hsl(228, 12%, 44%);
+    --lt_darkblue: hsl(230, 17%, 14%);
+    /*---------------------TYPOGRAPHY-----------------------*/
+    --card_head_size: 14px;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
+    font-family: 'Inter', sans-serif;
 }
