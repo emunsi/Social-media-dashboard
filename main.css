@@ -55,7 +55,7 @@ body {
 .hero {
     width: 100%;
     align-items: center;
-    padding: 20px 0;
+    padding: 1.2em 0;
     height: 200px;
     background-color: var(--dt_topbg);
 }
@@ -75,12 +75,13 @@ body {
 .hero-col h3 {
     color: var(--dt_white);
     font-size: 14px;
-    padding-right: 10px;
+    padding-right: 1.1em;
 }
 
 .hero-col p {
     color: var(--dt_blue);
     font-size: 14px;
+    font-weight: bold;
 }
 
 .toogle {
@@ -164,4 +165,111 @@ input:checked+.slider:before {
 }
 
 
-/*========================HERO========================*/
+/*========================FOLLOWER========================*/
+
+.follower {
+    position: relative;
+    top: -100px;
+}
+
+.follower-card {
+    background: var(--dt_card);
+    flex-basis: 24%;
+    position: relative;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: block;
+    height: 200px;
+}
+
+.follower-content {
+    padding: 1.4em;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    text-align: center;
+}
+
+.facebook {
+    background: var(--fb);
+    top: 0;
+    height: 5px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.twitter {
+    background: var(--tw);
+    top: 0;
+    height: 5px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.instagram {
+    background: var(--ig);
+    top: 0;
+    height: 5px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.youtube {
+    background: var(--yt);
+    top: 0;
+    height: 5px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.1em;
+}
+
+.tag img {
+    padding-right: 10px;
+}
+
+.tag p {
+    font-size: 0.8em;
+    color: var(--dt_blue);
+    font-weight: bold;
+}
+
+.count {
+    color: var(--dt_white);
+    font-size: 3.0em;
+}
+
+.subtext {
+    color: var(--dt_blue);
+    font-weight: 300;
+    text-transform: uppercase;
+    /*Macht BLOCKBUCHSTABEN */
+    font-size: 0.9em;
+    letter-spacing: 0.3em;
+    /*Abstand zw. Buchstaben*/
+    padding-bottom: 1.1em;
+}
+
+.newfollower {
+    color: var(--limegreen);
+}
+
+.newfollower .fas {
+    padding-right: 10px;
+}
+
+.losefollower {
+    color: var(--brightred);
+}
+
+.losefollower .fas {
+    padding-right: 10px;
+}
