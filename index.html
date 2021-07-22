@@ -16,6 +16,9 @@
         .attribution {
             font-size: 11px;
             text-align: center;
+            padding: 1.5em;
+            font-family: 'Inter', sans-serif;
+            color: var(--font-color);
         }
         
         .attribution a {
@@ -35,7 +38,7 @@
                 <div class="hero-col toogle">
                     <h3>Dark Mode</h3>
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="switch" onclick="toggleTheme()">
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -207,8 +210,34 @@
         </section>
 
         <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Elie Munsi</a>.
         </div>
+
+        <script>
+            // function to set a given theme/color-scheme
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+
+            // function to toggle between light and dark theme
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            // Immediately invoked function to set the theme on initial load
+            (function() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            })();
+        </script>
 
 
 </body>
