@@ -14,20 +14,24 @@
     --darkthemetoogle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     --lightthemetoogle: hsl(230, 22%, 74%);
     /*---------------------NEUTRAL COLORS-----------------------*/
-    /*---------DARK THEME-----------*/
-    --dt_bg: hsl(230, 17%, 14%);
-    --dt_topbg: hsl(232, 19%, 15%);
-    --dt_card: hsl(228, 28%, 20%);
-    --dt_blue: hsl(228, 34%, 66%);
-    --dt_white: hsl(0, 0%, 100%);
-    /*---------LIGHT THEME-----------*/
-    --lt_bg: hsl(0, 0%, 100%);
-    --lt_topbg: hsl(225, 100%, 98%);
-    --lt_card: hsl(227, 47%, 96%);
-    --lt_blue: hsl(228, 12%, 44%);
-    --lt_darkblue: hsl(230, 17%, 14%);
     /*---------------------TYPOGRAPHY-----------------------*/
     --card_head_size: 14px;
+}
+
+.theme-dark {
+    --color-background: hsl(230, 17%, 14%);
+    --color-top_background: hsl(232, 19%, 15%);
+    --color-card: hsl(228, 28%, 20%);
+    --color-subtext: hsl(228, 34%, 66%);
+    --font-color: hsl(0, 0%, 100%);
+}
+
+.theme-light {
+    --color-background: hsl(0, 0%, 100%);
+    --color-top_background: hsl(225, 100%, 98%);
+    --color-card: hsl(227, 47%, 96%);
+    --color-subtext: hsl(228, 12%, 44%);
+    --font-color: hsl(230, 17%, 14%);
 }
 
 * {
@@ -46,7 +50,7 @@ background: linear-gradient() für gradianten -> background
 */
 
 body {
-    background-color: var(--dt_bg);
+    background-color: var(--color-background);
 }
 
 
@@ -57,7 +61,7 @@ body {
     align-items: center;
     padding: 1.2em 0;
     height: 175px;
-    background-color: var(--dt_topbg);
+    background-color: var(--color-top_background);
 }
 
 .row {
@@ -70,17 +74,17 @@ body {
 }
 
 .hero-col h1 {
-    color: var(--dt_white);
+    color: var(--font-color);
 }
 
 .hero-col h3 {
-    color: var(--dt_white);
+    color: var(--font-color);
     font-size: 14px;
     padding-right: 1.1em;
 }
 
 .hero-col p {
-    color: var(--dt_blue);
+    color: var(--color-subtext);
     font-size: 14px;
     font-weight: bold;
 }
@@ -133,7 +137,7 @@ body {
     width: 22px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--dt_topbg);
+    background-color: var(--color-top_background);
     /*Kugel*/
     -webkit-transition: .4s;
     transition: .4s;
@@ -174,7 +178,7 @@ input:checked+.slider:before {
 }
 
 .follower-card {
-    background: var(--dt_card);
+    background: var(--color-card);
     flex-basis: 24%;
     position: relative;
     text-align: center;
@@ -239,17 +243,17 @@ input:checked+.slider:before {
 
 .tag p {
     font-size: 0.8em;
-    color: var(--dt_blue);
+    color: var(--color-subtext);
     font-weight: bold;
 }
 
 .count {
-    color: var(--dt_white);
+    color: var(--font-color);
     font-size: 3.0em;
 }
 
 .subtext {
-    color: var(--dt_blue);
+    color: var(--color-subtext);
     font-weight: 300;
     text-transform: uppercase;
     /*Macht BLOCKBUCHSTABEN */
@@ -286,12 +290,12 @@ input:checked+.slider:before {
 }
 
 .overview h2 {
-    color: var(--dt_white);
+    color: var(--font-color);
     padding-bottom: 1.2em;
 }
 
 .overview-card {
-    background: var(--dt_card);
+    background: var(--color-card);
     flex-basis: 24%;
     position: relative;
     text-align: center;
@@ -312,7 +316,7 @@ input:checked+.slider:before {
 }
 
 .overview-header p {
-    color: var(--dt_blue);
+    color: var(--color-subtext);
     font-weight: bold;
     font-size: 0.85em;
 }
@@ -328,10 +332,12 @@ input:checked+.slider:before {
 }
 
 .overview-content h3 {
-    color: var(--dt_white);
+    color: var(--font-color);
     font-size: 1.5em;
 }
 
 .overview-content p {
     font-size: 0.8em;
 }
+
+@media (max-width: 375px) {}
