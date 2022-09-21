@@ -30,16 +30,16 @@ export default function Home() {
       </Head>
 
       <section className={darkmode ? "hero-dark" : "hero"}>
-        <div class="row">
+        <div className="row">
           <div className={darkmode ? "hero-col-dark" : "hero-col"}>
             <h1>Social Media Dashboard</h1>
             <p>Total Followers: 23,004</p>
           </div>
-          <div className={darkmode ? "hero-col-dark toogle" : "hero-col toogle"} class="hero-col toogle">
+          <div className={darkmode ? "hero-col-dark toogle" : "hero-col toogle"}>
             <h3>Dark Mode</h3>
-            <label class="switch">
+            <label className="switch">
               <input type="checkbox" id="switch" onClick={() => toggleTheme()} />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </label>
           </div>
         </div>
@@ -47,61 +47,61 @@ export default function Home() {
       </section>
 
 
-      <section class="follower">
-        <div class="row">
+      <section className="follower">
+        <div className="row">
           <div className={darkmode ? "follower-card-dark" : "follower-card"}>
-            <div class="facebook"></div>
-            <div class="follower-content">
+            <div className="facebook"></div>
+            <div className="follower-content">
               <div className={darkmode ? "tag-dark" : "tag"}>
                 <Image src={Facebook} alt="Facebook" />
                 <p>@nathanf</p>
               </div>
               <h1 className={darkmode ? "count-dark" : "count"}>1987</h1>
               <p className={darkmode ? "subtext-dark" : "subtext"}>Followers</p>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>12 Today</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>12 Today</p>
 
             </div>
 
           </div>
 
           <div className={darkmode ? "follower-card-dark" : "follower-card"}>
-            <div class="twitter"></div>
-            <div class="follower-content">
+            <div className="twitter"></div>
+            <div className="follower-content">
               <div className={darkmode ? "tag-dark" : "tag"}>
                 <Image src={Twitter} alt="Twitter" />
                 <p>@nathanf</p>
               </div>
               <h1 className={darkmode ? "count-dark" : "count"}>1044</h1>
               <p className={darkmode ? "subtext-dark" : "subtext"}>Followers</p>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>99 Today</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>99 Today</p>
             </div>
 
           </div>
 
           <div className={darkmode ? "follower-card-dark" : "follower-card"}>
-            <div class="instagram"></div>
-            <div class="follower-content">
+            <div className="instagram"></div>
+            <div className="follower-content">
               <div className={darkmode ? "tag-dark" : "tag"}>
                 <Image src={Instagram} alt="Instagram" />
                 <p>@realnathanf</p>
               </div>
               <h1 className={darkmode ? "count-dark" : "count"}>11k</h1>
               <p className={darkmode ? "subtext-dark" : "subtext"}>Followers</p>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>1099 Today</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>1099 Today</p>
             </div>
 
           </div>
 
           <div className={darkmode ? "follower-card-dark" : "follower-card"}>
-            <div class="youtube"></div>
-            <div class="follower-content">
+            <div className="youtube"></div>
+            <div className="follower-content">
               <div className={darkmode ? "tag-dark" : "tag"}>
                 <Image src={Youtube} alt="Youtube" />
                 <p>Nathan F.</p>
               </div>
               <h1 className={darkmode ? "count-dark" : "count"}>8239</h1>
               <p className={darkmode ? "subtext-dark" : "subtext"}>Subscribers</p>
-              <p class="losefollower"><i class="fas fa-caret-down"></i>144 Today</p>
+              <p className="losefollower"><i className="fas fa-caret-down"></i>144 Today</p>
             </div>
 
           </div>
@@ -109,10 +109,10 @@ export default function Home() {
       </section>
 
       <section className={darkmode ? "overview-dark" : "overview"}>
-        <div class="row">
+        <div className="row">
           <h2>Overview - Today</h2>
         </div>
-        <div class="row">
+        <div className="row">
           <div className={darkmode ? "overview-card-dark" : "overview-card"}>
             <div className={darkmode ? "overview-header-dark" : "overview-header"}>
               <p>Page Views</p>
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>87</h3>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>3%</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>3%</p>
             </div>
           </div>
 
@@ -131,7 +131,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>52</h3>
-              <p class="losefollower"><i class="fas fa-caret-down"></i>2%</p>
+              <p className="losefollower"><i className="fas fa-caret-down"></i>2%</p>
             </div>
           </div>
 
@@ -142,7 +142,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>5462</h3>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>2257%</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>2257%</p>
             </div>
           </div>
 
@@ -153,13 +153,13 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>52k</h3>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>1375%</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>1375%</p>
             </div>
           </div>
 
         </div>
 
-        <div class="row">
+        <div className="row">
 
           <div className={darkmode ? "overview-card-dark" : "overview-card"}>
             <div className={darkmode ? "overview-header-dark" : "overview-header"}>
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>117</h3>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>303%</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>303%</p>
             </div>
           </div>
 
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>507</h3>
-              <p class="newfollower"><i class="fas fa-caret-up"></i>553%</p>
+              <p className="newfollower"><i className="fas fa-caret-up"></i>553%</p>
             </div>
           </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>107</h3>
-              <p class="losefollower"><i class="fas fa-caret-down"></i>19%</p>
+              <p className="losefollower"><i className="fas fa-caret-down"></i>19%</p>
             </div>
           </div>
 
@@ -201,7 +201,7 @@ export default function Home() {
             </div>
             <div className={darkmode ? "overview-content-dark" : "overview-content"}>
               <h3>1407</h3>
-              <p class="losefollower"><i class="fas fa-caret-down"></i>12%</p>
+              <p className="losefollower"><i className="fas fa-caret-down"></i>12%</p>
             </div>
           </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
 
       </section>
 
-      <div class="attribution">
+      <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Elie Munsi</a>.
       </div>
     </div>
